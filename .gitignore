@@ -1,0 +1,10 @@
+﻿__pycache__/
+*.pyc
+data/images/*
+!data/images/.gitkeep
+data/index/*
+!data/index/.gitkeep
+models/
+.env
+*.log
+.idea/

@@ -1,0 +1,314 @@
+{
+ "train": [
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\car_Cars_04.jpg",
+   "label": "car"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\beach_Beaches_03.jpg",
+   "label": "beach"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_06.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_06.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_10.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_04.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_01.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_11.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_03.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\car_Cars_06.jpg",
+   "label": "car"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_07.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_11.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_05.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_10.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_01.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_05.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_02.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_10.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_01.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_01.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_07.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\beach_Beaches_01.jpg",
+   "label": "beach"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_04.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\car_Cars_01.jpg",
+   "label": "car"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_03.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_03.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_02.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\beach_Beaches_05.jpg",
+   "label": "beach"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_07.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_09.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_07.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_09.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_07.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_09.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_14.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_13.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_06.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_06.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_05.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_04.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_02.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_08.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_05.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_05.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_07.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_02.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_12.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_11.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_05.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_15.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_01.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\car_Cars_05.jpg",
+   "label": "car"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_02.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_10.jpg",
+   "label": "night"
+  }
+ ],
+ "test": [
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_12.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_01.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_08.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\beach_Beaches_04.jpg",
+   "label": "beach"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_11.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_03.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_03.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_02.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_09.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_04.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_04.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_08.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\cat_Cats_03.jpg",
+   "label": "cat"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_08.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\dog_Dogs_04.jpg",
+   "label": "dog"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\car_Cars_03.jpg",
+   "label": "car"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\sport_Sports_06.jpg",
+   "label": "sport"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_06.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\beach_Beaches_02.jpg",
+   "label": "beach"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\building_Buildings_08.jpg",
+   "label": "building"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\flower_Flowers_08.jpg",
+   "label": "flower"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\night_Night_12.jpg",
+   "label": "night"
+  },
+  {
+   "path": "D:\\项目\\多模态相册\\data\\images\\car_Cars_02.jpg",
+   "label": "car"
+  }
+ ]
+}

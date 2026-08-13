@@ -1,0 +1,14 @@
+﻿# 核心依赖（按需安装，缺哪个装哪个）
+torch>=2.0
+torchvision
+transformers>=4.35
+faiss-cpu
+numpy
+pillow
+gradio
+fastapi
+uvicorn
+python-multipart
+# 微调阶段需要
+peft
+accelerate
