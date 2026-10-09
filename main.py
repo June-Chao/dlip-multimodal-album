@@ -4,7 +4,8 @@
   python main.py index          # 为 data/images 里的图片建索引
   python main.py search "..."   # 文字搜图
   python main.py tag <图片>     # 自动打标
-  python main.py api            # 启动 FastAPI (http://127.0.0.1:8000/docs)
+  python main.py web            # 启动智能相册 (http://127.0.0.1:8000)
+  python main.py api            # 同时提供网页与 FastAPI (/docs)
   python main.py ui             # 启动 Gradio 界面
   # ---- 第二阶段：CLIP 微调 ----
   python main.py split          # 划分训练/测试集
@@ -38,7 +39,7 @@ def main():
         for en, cn, s in tag_image(args[1]):
             print(f"{cn}({en}): {s*100:.1f}%")
 
-    elif cmd == "api":
+    elif cmd in {"api", "web"}:
         import uvicorn
         uvicorn.run("api.server:app", host="127.0.0.1", port=8000, reload=False)
 

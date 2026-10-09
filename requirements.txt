@@ -6,9 +6,7 @@ faiss-cpu
 numpy
 pillow
 gradio
-fastapi
-uvicorn
-python-multipart
+-r requirements-web.txt
 # 微调阶段需要
 peft
 accelerate

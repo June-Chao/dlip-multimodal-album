@@ -8,3 +8,8 @@ models/
 .env
 *.log
 .idea/
+.venv/
+.pytest_cache/
+data/library.sqlite3*
+data/thumbnails/
+data/.upload-*

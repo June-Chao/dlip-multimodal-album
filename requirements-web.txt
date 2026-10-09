@@ -1,0 +1,6 @@
+# Python 3.10+; basic album features work without ML packages.
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+pydantic>=2.9,<3
+python-multipart>=0.0.18
+Pillow>=10.4,<13

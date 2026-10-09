@@ -3,7 +3,8 @@
 # 用 curl 直连 hf-mirror（huggingface_hub 在部分网络环境会卡住），支持断点续传
 set -euo pipefail
 
-DEST="/mnt/d/项目/DLIP多模态相册/models/chinese-clip-vit-base-patch16-local"
+PROJECT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+DEST="$PROJECT_DIR/models/chinese-clip-vit-base-patch16-local"
 mkdir -p "$DEST"
 
 BASE="https://hf-mirror.com/OFA-Sys/chinese-clip-vit-base-patch16/resolve/main"
@@ -15,7 +16,8 @@ dl() { # $1=url  $2=目标文件
     return
   fi
   echo "[下载] $1"
-  curl -sL -C - --retry 5 --retry-delay 3 --retry-all-errors -o "$2" "$1"
+  curl -fSL -C - --retry 5 --retry-delay 3 -o "$2.part" "$1"
+  mv "$2.part" "$2"
   echo "[完成] $2 ($(du -h "$2" | cut -f1))"
 }
 

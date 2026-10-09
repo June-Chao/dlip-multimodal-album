@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>LUMA 光屿相册 · 你的影像工作台</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="LUMA 光屿相册首页"><span class="brand-mark">L</span><span><strong>LUMA<span class="brand-dot">.</span></strong><small>光屿相册</small></span></a>
+    <p class="nav-label">我的空间 <span>WORKSPACE</span></p>
+    <nav aria-label="相册导航">
+      <button class="nav-item active" id="nav-all" data-view="all"><span data-icon="grid"></span><span>全部照片</span><b id="count-all">0</b></button>
+      <button class="nav-item" id="nav-favorites" data-view="favorites"><span data-icon="heart"></span><span>我的收藏</span><b id="count-favorites">0</b></button>
+    </nav>
+    <div class="album-label"><p class="nav-label">自定义相册</p><button class="icon-button" id="new-album" aria-label="新建相册" title="新建相册"><span data-icon="plus"></span></button></div>
+    <nav id="album-list" aria-label="自定义相册"></nav>
+    <p id="no-albums" class="subtle sidebar-hint">给旅行、日常和灵感，<br>各自留一个位置。</p>
+    <div class="sidebar-bottom"><div class="privacy"><span data-icon="shield"></span><div><strong>属于你的本地空间</strong><small>照片与检索数据保存在本机</small></div></div><div class="storage"><span id="storage-info">0 张照片 · 0 B</span><span>LOCAL</span></div></div>
+  </aside>
+  <main>
+    <header class="topbar"><span class="eyebrow">DLIP MULTIMODAL ALBUM</span><button class="engine-trigger" id="open-system"><span class="status-dot" id="engine-dot"></span><span id="engine-label">正在连接引擎</span><span data-icon="chevron"></span></button></header>
+    <section class="workspace">
+      <div class="page-heading"><div><p class="eyebrow accent">YOUR MOMENTS, CONNECTED</p><h1 id="page-title">全部照片<span class="heading-dot">.</span></h1><p id="page-description">让每一帧记忆，都能被轻松找到。</p></div><div class="heading-actions"><button class="button quiet" id="refresh-library" title="扫描本地图片目录"><span data-icon="refresh"></span><span>刷新图库</span></button><button class="button primary" id="import-button"><span data-icon="plus"></span>导入照片</button></div></div>
+      <form class="search-panel" id="search-form"><div class="search-input-row"><span data-icon="search"></span><input id="search-input" type="search" placeholder="描述你想找的画面，例如：海边的日落" autocomplete="off" aria-label="搜索照片"><button class="search-submit" type="submit">搜索<span data-icon="arrow"></span></button></div><div class="search-options"><div class="mode-switch" role="group" aria-label="搜索模式"><button type="button" data-mode="hybrid" class="selected">智能混合</button><button type="button" data-mode="semantic">语义搜索</button><button type="button" data-mode="keyword">关键词</button></div><span class="search-tip" id="search-tip">用自然语言，找回画面里的记忆</span></div><div id="search-history" class="search-history" hidden></div></form>
+      <div class="toolbar"><div class="filter-group" role="group" aria-label="照片方向"><button class="filter active" data-orientation="">全部画幅</button><button class="filter" data-orientation="landscape">横向</button><button class="filter" data-orientation="portrait">竖向</button><button class="filter" data-orientation="square">方形</button></div><div class="toolbar-right"><span id="result-count">0 张照片</span><label class="sort-label"><span data-icon="sort"></span><select id="sort-select" aria-label="照片排序"><option value="newest">最新导入</option><option value="oldest">最早导入</option><option value="name">文件名称</option></select></label></div></div>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div id="loading" class="loading" role="status" hidden><span class="spinner"></span>正在寻找你的照片…</div>
+      <section id="photo-grid" class="photo-grid" aria-label="照片列表"></section>
+      <section id="empty-state" class="empty-state" hidden><div class="empty-art" aria-hidden="true"><div class="art-card art-back"></div><div class="art-card art-front"><div class="art-sun"></div><div class="art-hill"></div><span>YOUR NEXT MEMORY</span></div><div class="art-spark">✳</div></div><p class="eyebrow accent" id="empty-kicker">A LITTLE SPACE FOR YOUR WORLD</p><h2 id="empty-title">美好的记忆，值得被找到。</h2><p id="empty-description">把照片放进光屿，用一句话找回某个瞬间。<br>所有照片与索引，都安静地留在你的电脑里。</p><button class="button primary" id="empty-import"><span data-icon="plus"></span>导入第一组照片</button><p class="file-hint" id="empty-hint">支持 JPEG / PNG / WEBP / BMP · 单张最大 25 MB</p><div class="feature-row" id="feature-row"><div><span data-icon="search"></span><strong>描述画面，即刻寻找</strong><small>CLIP 多模态语义检索</small></div><div><span data-icon="folder"></span><strong>灵感归档，井井有条</strong><small>收藏、标签与自定义相册</small></div><div><span data-icon="shield"></span><strong>本地运行，私密安心</strong><small>照片始终由你掌握</small></div></div></section>
+      <div class="load-more-wrap"><button class="button quiet" id="load-more" hidden>加载更多照片</button></div>
+      <footer class="page-footer"><span>LUMA — A HOME FOR YOUR MOMENTS</span><span>由 CLIP 多模态检索驱动</span></footer>
+    </section>
+  </main>
+  <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp,image/bmp" multiple hidden>
+  <div id="drop-overlay" class="drop-overlay" hidden><div><span data-icon="upload"></span><h2>让照片，在这里安家。</h2><p>松开鼠标以导入 · 每次最多 50 张</p></div></div>
+  <dialog id="upload-dialog" class="small-dialog"><div class="dialog-heading"><h2>导入照片</h2><button class="icon-button" data-close aria-label="关闭"><span data-icon="close"></span></button></div><p class="muted">每次最多 50 张，单张不超过 25 MB。</p><button id="upload-zone" class="upload-zone"><span data-icon="upload"></span><strong>选择照片，或拖放到窗口</strong><small>JPEG · PNG · WEBP · BMP</small></button><div id="upload-status" role="status"></div><div class="dialog-footer"><button class="button quiet" data-close>完成</button></div></dialog>
+  <dialog id="album-dialog" class="small-dialog"><form id="album-form"><div class="dialog-heading"><h2>新建相册</h2><button type="button" class="icon-button" data-close aria-label="关闭"><span data-icon="close"></span></button></div><label class="field">相册名称<input id="album-name" required maxlength="80" placeholder="例如：夏日漫游"></label><label class="field">一句话介绍 <span class="muted">选填</span><textarea id="album-description" rows="3" maxlength="500" placeholder="收好这段日子里的闪光片段"></textarea></label><div class="dialog-footer"><button type="button" class="button quiet" data-close>取消</button><button class="button primary" type="submit">创建相册</button></div></form></dialog>
+  <dialog id="photo-dialog" class="photo-dialog"><button class="detail-close icon-button" data-close aria-label="关闭照片"><span data-icon="close"></span></button><div class="detail-image"><img id="detail-img" alt=""></div><div class="detail-panel"><p class="eyebrow accent">PHOTO DETAILS</p><h2 id="detail-name"></h2><div id="detail-meta" class="detail-meta"></div><div class="detail-actions"><button id="detail-favorite" class="button quiet"><span data-icon="heart"></span>收藏</button><button id="detail-similar" class="button quiet"><span data-icon="search"></span>寻找相似</button></div><form id="metadata-form"><label class="field">照片描述<textarea id="detail-caption" rows="3" maxlength="2000" placeholder="写下画面中的故事…"></textarea></label><label class="field">标签<input id="detail-tags" placeholder="旅行, 海边, 日落" maxlength="1000"><small>用逗号分隔，支持关键词检索</small></label><div class="metadata-buttons"><button type="button" class="button quiet" id="auto-tag"><span data-icon="sparkles"></span>自动打标</button><button class="button primary" type="submit">保存信息</button></div></form><div class="detail-albums"><h3>收录到相册</h3><div id="detail-albums"></div><p class="muted" id="detail-no-albums">先创建一个相册，为照片找到归属。</p></div><a id="detail-original" class="original-link" target="_blank" rel="noopener">查看原始图片 <span data-icon="arrow"></span></a></div></dialog>
+  <dialog id="system-dialog" class="small-dialog system-dialog"><div class="dialog-heading"><h2>本地检索引擎</h2><button class="icon-button" data-close aria-label="关闭"><span data-icon="close"></span></button></div><p class="muted">导入照片后建立索引，即可使用语义搜索、相似照片与自动标签。</p><div id="system-models"></div><div id="index-progress" class="index-progress"></div><p id="system-device" class="file-hint"></p><div class="setup-note">尚未准备模型？请按照项目 README 的模型配置步骤安装。关键词检索、收藏和相册功能可直接使用。</div><div class="dialog-footer"><button class="button quiet" id="refresh-system">刷新状态</button><button class="button primary" id="build-index"><span data-icon="sparkles"></span>建立 / 更新索引</button></div></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+</body>
+</html>
